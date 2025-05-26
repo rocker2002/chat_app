@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"chat-app-moizz","appId":"1:335940409125:android:2ed3c31735a5596c382ccc","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"chat-app-moizz","configurations":{"android":"1:335940409125:android:2ed3c31735a5596c382ccc","ios":"1:335940409125:ios:dc51392c8381650e382ccc"}}}}}}
