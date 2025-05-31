@@ -1,5 +1,6 @@
-import 'package:chat_app/home_page.dart';
+import 'package:chat_app/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
@@ -8,7 +9,8 @@ Future<void> main() async{
   await Firebase.initializeApp(
   options: DefaultFirebaseOptions.currentPlatform,
 );
-runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   runApp(const MyApp());
 }
 
@@ -19,7 +21,10 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Scaffold(
+        backgroundColor: Colors.grey[200],
+        body: RegistrationPage(),
+      )
     );
   }
 }

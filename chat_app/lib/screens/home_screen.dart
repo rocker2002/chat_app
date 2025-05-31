@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       body: SafeArea(
-        child: Text('Welcome to Home Page!')
+        child: Text('Welcome!')
       ),
     );
   }
